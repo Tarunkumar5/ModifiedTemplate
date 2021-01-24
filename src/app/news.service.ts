@@ -43,8 +43,10 @@ export class NewsService {
   bbcNews() : Observable<Array<any>>{
     return this.httpClient.get<Array<any>>("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=460f485949674cc3b853143ac6a7721e");
   }
-
-
+  topheadlinesUs():   Observable<Array<any>>{
+    return this.httpClient.get<Array<any>>("https://newsapi.org/v2/top-headlines?country=in&apiKey=460f485949674cc3b853143ac6a7721e");
+  }
+  
   addNews(news : any) : Observable<any>
   {
     alert(news);

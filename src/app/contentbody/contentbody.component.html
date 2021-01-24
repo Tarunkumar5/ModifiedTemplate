@@ -67,25 +67,18 @@
                   </div>
                 </div>
                 <div class="single_category  wow fadeInDown">
-                  <div class="category_title"> <a href="assets/pages/category-archive.html">Category 2</a></div>
+                  <div class="category_title"> <a href="assets/pages/category-archive.html">Bussiness News</a></div>
                   <div class="single_category_inner">
                     <ul class="catg_nav catg_nav2">
-                      <li>
-                        <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="assets/images//310x300.jpg" alt=""> </a></div>
-                        <a class="catg_title" href="#"> Curabitur ac dictum nisl eu hendrerit ante</a>
+                      <li *ngFor="let news of businessList">
+                        <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="{{news.urlToImage}}" alt=""> </a></div>
+                        <a class="catg_title" href="#"> {{news.title}}e</a>
                         <div class="sing_commentbox">
-                          <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                          <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                        <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
+                          <p><i class="fa fa-calendar"></i>{{news.publishedAt}}</p>
+                          </div>
+                        <p class="post-summary">{{news.description}}</p>
                      </li>
-                      <li>
-                        <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="assets/images//310x300.jpg" alt=""> </a></div>
-                        <a class="catg_title" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-                        <div class="sing_commentbox">
-                          <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                          <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                        <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
-                     </li>
+
                     </ul>
                   </div>
                 </div>
@@ -273,59 +266,15 @@
             <div class="row">
               <div class="right_bar">
                 <div class="single_leftbar wow fadeInDown">
-                  <h2><span>Popular Post</span></h2>
+                  <h2><span>Top Headlines From India</span></h2>
                   <div class="singleleft_inner">
                     <ul class="catg3_snav ppost_nav wow fadeInDown">
-                      <li>
-                        <div class="media"> <a href="assets/pages/single_page.html" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="assets/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
+                      <li *ngFor="let news of topheadlinesUs | slice:0:10; let i=index ">
+                        <div class="media"> <a href="assets/pages/single_page.html" class="media-left"> <img alt="" src="{{news.urlToImage}}"> </a>
+                          <div class="media-body"> <a href="assets/pages/single_page.html" class="catg_title"> {{news.title}}</a></div>
                         </div>
                      </li>
-                      <li>
-                        <div class="media"> <a href="assets/pages/single_page.html" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="assets/pages/single_page.html" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
-                      <li>
-                        <div class="media"> <a href="#" class="media-left"> <img alt="" src="assets/images//70x70.jpg"> </a>
-                          <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a></div>
-                        </div>
-                     </li>
+                      
                     </ul>
                   </div>
                 </div>
@@ -446,19 +395,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="single_leftbar wow fadeInDown">
-                  <h2><span>Blog Archive</span></h2>
-                  <div class="singleleft_inner">
-                    <div class="blog_archive">
-                      <form action="#">
-                        <select>
-                          <option value="">Blog Archive</option>
-                          <option value="">October(20)</option>
-                        </select>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="single_leftbar wow fadeInDown">
                   <h2><span>Labels</span></h2>
                   <div class="singleleft_inner">
