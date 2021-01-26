@@ -15,16 +15,50 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
+import { BusinessComponent } from './header/Catagories/business/business.component';
+import { EntertainmentComponent } from './header/Catagories/entertainment/entertainment.component';
+import { GeneralComponent } from './header/Catagories/general/general.component';
+import { HealthComponent } from './header/Catagories/health/health.component';
+import { SportsComponent } from './header/Catagories/sports/sports.component';
+import { ScienceComponent } from './header/Catagories/science/science.component';
+import { TechnologyComponent } from './header/Catagories/technology/technology.component';
 
 const approutes : Routes= [
   {
-     path : '' , 
+     path : 'login' , 
      component : LoginComponent
   },
   {
        path : 'dashboard',
        component : DashboardComponent,
        canActivate : [GuardService]
+  },
+  {
+    path : 'content',
+    component : ContentbodyComponent
+  
+  },
+  {
+    path : 'business',
+    component : BusinessComponent
+
+  },
+  {
+    path : 'entertainment',
+    component : EntertainmentComponent
+  },
+  {
+    path : 'general',
+    component : GeneralComponent
+  },
+  
+  {
+    path : 'health',
+    component : HealthComponent
+  },
+  {
+    path : 'header',
+    component : HeaderComponent
   },
   {
     path : 'register',
@@ -42,7 +76,14 @@ const approutes : Routes= [
     ContentbodyComponent,
     FooterComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    BusinessComponent,
+    EntertainmentComponent,
+    GeneralComponent,
+    HealthComponent,
+    SportsComponent,
+    ScienceComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
