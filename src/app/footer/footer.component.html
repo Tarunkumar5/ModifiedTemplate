@@ -18,21 +18,12 @@
             <div class="single_footer_top wow fadeInLeft">
               <h2>Popular Post</h2>
               <ul class="catg3_snav ppost_nav">
-                <li>
-                  <div class="media"> <a class="media-left" href="assets/pages/single_page.html"> <img src="assets/images//70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="assets/pages/single_page.html"> Aliquam malesuada diam eget turpis varius</a></div>
+                <li *ngFor="let news of mostpopularNews | slice:0:3; let i = index">
+                  <div class="media"> <a class="media-left" href="assets/pages/single_page.html"> <img src="{{news.urlToImage}}" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="assets/pages/single_page.html"> {{news.title}}</a></div>
                   </div>
                </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="assets/pages/single_page.html"> <img src="assets/images//70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="#"> <img src="assets/images//70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
-                  </div>
-               </li>
+                
               </ul>
             </div>
           </div>
