@@ -1,0 +1,23 @@
+<div class="category_four wow fadeInDown">
+    <div class="single_category">
+      <div class="category_title"> <a href="#">General News</a></div>
+      <div class="single_category_inner">
+        <ul class="catg_nav catg_nav3">
+          <li *ngFor = "let news of generalList">
+            <div class="catgimg_container"> <a class="catg1_img" href="assets/pages/single_page.html"> <img src="{{news.urlToImage}}" alt=""> </a></div>
+            <a class="catg_title" href="assets/pages/single_page.html"> {{news.title}}</a>
+            <div class="sing_commentbox">
+              <p><i class="fa fa-calendar"></i>{{news.publishedAt}}</p>
+              
+            <p class="post-summary">{{news.description}}</p>
+            </div>
+         </li>
+        </ul>
+
+                    
+                </div>
+              </div>
+              </div>
+   
+        
+
